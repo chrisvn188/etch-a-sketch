@@ -12,33 +12,33 @@
         <h1>Etch A Sketch</h1>
     </header>
     <main class="main">
-        <sidebar class="options-area">
-            <div class="options-container">
+        <sidebar class="modes-area">
+            <div class="modes-container">
                 <ul>
-                    <li><button class="btn">Toggle Rainbow</button></li>
-                    <li><button class="btn">Toggle Lighten</button></li>
-                    <li><button class="btn">Toggle Darken</button></li>
-                    <li><button class="btn">Toggle Eraser</button></li>
-                    <li><button class="btn">Clear</button></li>
+                    <li><button class="mode-btn">Rainbow Mode</button></li>
+                    <li><button class="mode-btn">Lighten Mode</button></li>
+                    <li><button class="mode-btn">Darken Mode</button></li>
+                    <li><button class="mode-btn">Eraser Mode</button></li>
+                    <li><button class="mode-btn">Clear</button></li>
                 </ul>
             </div>
         </sidebar>
         <section class="sketch-area">
-            <div class="color-inputs-box">
+            <div class="color-inputs-container">
                 <!-- color-inputs -->
-                <label for="sketch-bg">Background</label>
-                <input type="color" id="sketch-bg">
-                <label for="pen-cl">Pen Color</label>
-                <input type="color" id="pen-cl">
+                <label for="sketch-bg-input">Background</label>
+                <input type="color" id="sketch-bg-input" name="sketch-bg-input">
+                <label for="pen-cl-input">Pen Color</label>
+                <input type="color" id="pen-cl-input" name="pen-cl-input">
             </div>
-            <div class="sketch-box">
+            <div class="sketch-container">
                 <!-- sketch-box -->
             </div>
-            <div class="size-choosing-box">
+            <div class="size-choosing-container">
                 <!-- size -->
-                <div class="sketch-size-container">
+                <div class="sketch-size">
                     <label for="size-input">16 x 16</label><br>
-                    <input type="range" id="size-input">
+                    <input type="range" id="size-input" name="size-input" min="2" max="32" step="1" value="16">
                 </div>
                 
             </div>

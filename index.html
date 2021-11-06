@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Etch A Sketch</title>
+</head>
+<body>
+    <header class="header">
+        <h1>Etch A Sketch</h1>
+    </header>
+    <main class="main">
+        <sidebar class="options-area">
+            <div class="options-container">
+                <ul>
+                    <li><button class="btn">Toggle Rainbow</button></li>
+                    <li><button class="btn">Toggle Lighten</button></li>
+                    <li><button class="btn">Toggle Darken</button></li>
+                    <li><button class="btn">Toggle Eraser</button></li>
+                    <li><button class="btn">Clear</button></li>
+                </ul>
+            </div>
+        </sidebar>
+        <section class="sketch-area">
+            <div class="color-inputs-box">
+                <!-- color-inputs -->
+                <label for="sketch-bg">Background</label>
+                <input type="color" id="sketch-bg">
+                <label for="pen-cl">Pen Color</label>
+                <input type="color" id="pen-cl">
+            </div>
+            <div class="sketch-box">
+                <!-- sketch-box -->
+            </div>
+            <div class="size-choosing-box">
+                <!-- size -->
+                <div class="sketch-size-container">
+                    <label for="size-input">16 x 16</label><br>
+                    <input type="range" id="size-input">
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>

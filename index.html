@@ -15,30 +15,29 @@
         <sidebar class="modes-area">
             <div class="modes-container">
                 <ul>
-                    <li><button class="mode-btn">Rainbow Mode</button></li>
-                    <li><button class="mode-btn">Lighten Mode</button></li>
-                    <li><button class="mode-btn">Darken Mode</button></li>
-                    <li><button class="mode-btn">Eraser Mode</button></li>
-                    <li><button class="mode-btn">Clear</button></li>
+                    <li><button class="btn mode-btn" id="solid-mode" data-mode="solid">Solid Mode</button></li>
+                    <li><button class="btn mode-btn" id="rainbow-mode" data-mode="rainbow">Rainbow Mode</button></li>
+                    <li><button class="btn mode-btn" id="eraser-mode" data-mode="eraser">Eraser Mode</button></li>
+                    <li><button class="btn" id="clear-btn">Clear</button></li>
                 </ul>
             </div>
         </sidebar>
         <section class="sketch-area">
             <div class="color-inputs-container">
                 <!-- color-inputs -->
-                <label for="sketch-bg-input">Background</label>
-                <input type="color" id="sketch-bg-input" name="sketch-bg-input">
                 <label for="pen-cl-input">Pen Color</label>
                 <input type="color" id="pen-cl-input" name="pen-cl-input">
+                <label for="sketch-bg-input">Background</label>
+                <input type="color" id="sketch-bg-input" name="sketch-bg-input">
             </div>
-            <div class="sketch-container">
-                <!-- sketch-box -->
+            <div class="sketch-container" id="sketch-container">
+                <!-- sketch -->
             </div>
             <div class="size-choosing-container">
-                <!-- size -->
-                <div class="sketch-size">
-                    <label for="size-input">16 x 16</label><br>
-                    <input type="range" id="size-input" name="size-input" min="2" max="32" step="1" value="16">
+                <!-- size slider -->
+                <div class="sketch-size-box">
+                    <label for="size-slider">16 x 16</label><br>
+                    <input type="range" id="size-slider" name="size-slider" min="2" max="32" step="1" value="16">
                 </div>
                 
             </div>
